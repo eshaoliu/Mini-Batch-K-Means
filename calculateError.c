@@ -12,7 +12,7 @@ void calculateError()
 		{
 			diff = centroids[i][j] - means[i][j];
 			
-			dist = diff * diff;
+			dist += diff * diff;
 		}
 		
 		printf("%f ", dist);
